@@ -1,0 +1,34 @@
+# call by value
+
+
+str = "Mithra"
+def test(string):
+		string = "i can do it"
+	print("Inside Function:", string)
+test(str)
+print("Outside Function:", str) 
+
+
+OUTPUT:
+Inside function: I can do it
+Outside function: Mithra
+
+
+
+
+# call by reference
+
+
+def add_more(list):
+	list.append(50)
+	print("Inside Function", list)
+
+mylist = [10,20,30,40]
+
+add_more(mylist)
+print("Outside Function:", mylist)
+
+
+Output:
+Inside function: [10, 20,30,40,50]
+Outside function: [10, 20,30,40,50]
